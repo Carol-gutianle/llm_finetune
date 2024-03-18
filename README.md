@@ -1,2 +1,3 @@
 # llm_finetune
-A simple process for finetune Large Language Models (LLMs).
+
+A simple way to fine-tune a large language model(LLM).
