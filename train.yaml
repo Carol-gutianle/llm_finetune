@@ -1,0 +1,16 @@
+# model_args
+model_dir: '/mnt/cachenew/gutianle/modelscope/Llama-2-7b-ms'
+output_dir: '/mnt/cachenew/gutianle/tofu'
+# data_args
+max_seq_length: 2048
+instruct_column: 'instruct'
+query_column: 'question'
+response_column: 'answer'
+# train_args
+train_batch_size: 16
+gradient_accumulation_steps: 1
+num_train_epochs: 3
+local_rank: -1
+log_steps: 10
+save_steps: 400
+lr: 1e-5

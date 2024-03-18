@@ -1,0 +1,2 @@
+model_dir: '/mnt/cachenew/gutianle/modelscope/Llama-2-7b-ms'
+do_peft: False
