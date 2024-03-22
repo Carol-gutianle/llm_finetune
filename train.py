@@ -52,6 +52,8 @@ def main():
     )
     
     tokenizer = LlamaTokenizer.from_pretrained(args.model_dir)
+    tokenizer.pad_token = tokenizer.eos_token
+    tokenizer.padding_side = 'right'
     
     train_data = MyDataset(load_dataset('locuslab/TOFU', 'full')['train'])
     
